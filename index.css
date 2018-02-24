@@ -72,7 +72,7 @@ body {
   margin: 0;
 }
 
-.calculator-screen__text--previous {
+.calculator-screen__text--expression {
   bottom: 10px;
   color: #a0a0a0;
   font-size: 16px;
