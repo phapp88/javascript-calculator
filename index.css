@@ -1,5 +1,6 @@
 body {
   background-color: #646464;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .calculator {
@@ -91,4 +92,24 @@ footer {
 footer a {
   color: CornFlowerBlue;
   text-decoration: none;
+}
+
+@media (max-width: 400px) {
+  .calculator {
+    height: 385px;
+    width: 300px;
+  }
+
+  .calculator-btn-grid {
+    grid-gap: 10px 27px;
+    grid: repeat(5, 42px) / repeat(4, 51px);
+  }
+
+  .calculator-btn-grid__btn {
+    font-size: 20px;
+  }
+
+  .calculator__label {
+    font-size: 18px;
+  }
 }
