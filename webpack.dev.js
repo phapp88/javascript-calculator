@@ -1,4 +1,4 @@
-const merge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 
 const common = require('./webpack.common');
 
@@ -8,6 +8,7 @@ const config = merge(common, {
     rules: [
       {
         test: /\.css$/,
+        exclude: /node_modules/,
         use: ['style-loader', 'css-loader'],
       },
     ],
